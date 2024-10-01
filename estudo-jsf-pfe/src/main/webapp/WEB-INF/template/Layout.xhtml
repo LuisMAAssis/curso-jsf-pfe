@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ 	xmlns:h="http://xmlns.jcp.org/jsf/html"
+ 	xmlns:f="http://xmlns.jcp.org/jsf/core"
+ 	xmlns:p="http://primefaces.org/ui"
+ 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+
+<meta charset="UTF-8"/>
+<title>Gestão Empresas</title>
+
+<h:outputStylesheet library="lm" name="estilo.css" />
+
+</h:head>
+
+<h:body>
+	<header>
+		<h:graphicImage library="lm" name="logo.png" />
+	</header>
+	
+	<h2>
+		<ui:insert name="titulo" />
+	</h2>
+
+	<div id="conteudo">		
+		<ui:insert name="conteudo" />	
+	</div>
+	
+	<footer>
+		Curso online Algaworks "JSF e PrimeFaces Essencial"
+	</footer>
+	
+	<h:form>
+		<p:confirmDialog>
+			<p:commandButton value="Não" icon="fa fa-remove" 
+				styleClass="ui-confirmedialog-no"/>
+				
+			<p:commandButton value="Sim" icon="fa fa-check" 
+				styleClass="ui-confirmedialog-yes"/>
+		</p:confirmDialog>
+	</h:form>
+</h:body>
+
+</html>
